@@ -24,7 +24,7 @@ let dayNumber = now.getDay();
 // STEP 3: Create an array of day names:
 //         let days = ["Sunday", "Monday", "Tuesday", "Wednesday",
 //                     "Thursday", "Friday", "Saturday"];
-const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let day = days[dayNumber];
 //                     
 // STEP 4: Use the day number as an index to get the day name
@@ -46,14 +46,14 @@ document.getElementById("warmUpDate").innerHTML = day;
 // STEP 7: Get the month using .getMonth()
 //         IMPORTANT: .getMonth() returns 0–11 (January = 0)
 //         so you must add 1 to get the correct month number.
-
+let month = now.getMonth();
 // STEP 8: Get the day of the month using .getDate()
-
+let today = now.getDate();
 // STEP 9: Get the year using .getFullYear()
-
+let year = now.getFullYear();
 // STEP 10: Build the date string: month + "/" + day + "/" + year
 //          Display it in the element with ID "myDate"
-
+document.getElementById("myDate").innerHTML = month + "/" + today + "/" + year;
 
 // ============================================
 //  PART 2: Elapsed Timer
