@@ -46,7 +46,7 @@ document.getElementById("warmUpDate").innerHTML = day;
 // STEP 7: Get the month using .getMonth()
 //         IMPORTANT: .getMonth() returns 0–11 (January = 0)
 //         so you must add 1 to get the correct month number.
-let month = now.getMonth();
+let month = now.getMonth() +1;
 // STEP 8: Get the day of the month using .getDate()
 let today = now.getDate();
 // STEP 9: Get the year using .getFullYear()
